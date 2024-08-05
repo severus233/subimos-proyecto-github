@@ -51,30 +51,50 @@ nav ul {
     justify-content: space-between;
 }
 .fotohero {
-    width: 300px;
+    width: 400px;
     margin: auto;
     background-size: cover;
     margin: 40px 0px 30px 60px;
 }
 .heroindex h1 {
     margin-top: 180px;
+    font-size: 38px;
+    font-weight: 900;
 }
 .heroindex p {
     width: 600px;
     margin-top: 32px;
     line-height: 20px;
     font-weight: 600;
+    font-size: 22px;
+}
+.contenedor-cards{
+  display: flex;
+  width: 100%;
+  height: 37.5rem;  
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
 }
 main {
-    min-height: 600px;
     background-color: black;
+    color: aliceblue;
+    min-height: 600px;
+}
+.tituloindex { 
+    font-size: 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 30px;  
+
 }
 .card {
     width: 300px;
     height: 300px;
-    background-color: rgba(110, 110, 255, 0.637);
-    border-radius: 5px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.138);
+    background-color: rgba(105, 160, 237, 0.637);
+    border-radius: 5px 5px 5px 5px; 
     margin: 5px;
 }
 .card .cardimg {
@@ -87,10 +107,22 @@ main {
     object-fit: contain;
     margin-top: 5px;
 }
+.card-info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .625rem;
+    color: aliceblue;
+    margin-left: 10px;
+}
 h3 {
     font-size: 20px;
     font-weight: 600;
     color: rgb(232, 255, 115);
+    margin-left: 10px;
+    margin-top: 10px;
+
+
 }
 footer {
     background-color: rgb(40, 36, 36);
@@ -120,5 +152,61 @@ footer {
     width: 50px;
     margin-right: 16px;
     vertical-align: middle;
+}
+.beneficios{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(5, 100px);
+    column-gap: 20px;
+}
+.beneficios img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.beneficios h1 {
+    grid-column: 3/6;
+    grid-row: initial;
+    align-self: center;
+    padding: 25px;
+    margin: 30px;
+    font-size: 32px;
+    font-weight: 900;
+}
+.beneficios p {
+    grid-column: 3/6;
+    grid-row: 2/3;
+    margin: 15px;    
+}
+.beneficios .imgdeporte {
+    grid-column: 2/4;
+    grid-row: 3/6;
+       
+} 
+.beneficios .imgmovile {
+    grid-column: 4/6;
+    grid-row: 3/6;
+          
+}
+.beneficios .imggimnasio {
+    grid-column: 6/8;
+    grid-row: 3/6;
+}
+.beneficiosinfo {
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(3,50px);
+}
+.beneficiosinfo .bdeporte {
+    grid-column: 2/4;
+}
+.beneficiosinfo .app {
+    grid-column: 4/6;
+    grid-row: 1/1;
 
+}
+.beneficiosinfo .sede {
+    grid-column: 7/7;
 }
